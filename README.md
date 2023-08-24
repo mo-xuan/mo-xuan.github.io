@@ -1,2 +1,1 @@
-# mo-xuan.github.io
-resume
+# Personal profile
