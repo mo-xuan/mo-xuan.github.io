@@ -70,6 +70,19 @@ onMounted(() => {
         }
       }
   )
+
+  $gsap.to('.end-text',
+      {
+        x: 20,
+        opacity: 1,
+        duration: MOVE_DURATION,
+        scrollTrigger: {
+          trigger: '.end-text',
+          toggleActions: 'restart',
+          start: "top bottom",
+        }
+      }
+  )
 })
 
 </script>
@@ -103,6 +116,9 @@ onMounted(() => {
         class="cat cat4"
     />
 
+    <div class="end-text text-2xl font-medium text-blue-600/100">
+      小猫累了，打招呼完毕
+    </div>
   </div>
 </template>
 
@@ -143,6 +159,13 @@ onMounted(() => {
 .mid-text{
   position: absolute;
   top: 230vh;
+  left: 0;
+  opacity: 0;
+}
+
+.end-text{
+  position: absolute;
+  top: 440vh;
   left: 0;
   opacity: 0;
 }
