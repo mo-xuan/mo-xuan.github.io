@@ -113,10 +113,10 @@ onMounted(() => {
     <img
         alt=""
         src="@/assets/img/cat4.jpg"
-        class="cat cat4"
+        class="cat cat4 rounded-2xl"
     />
 
-    <div class="end-text text-2xl font-medium text-blue-600/100">
+    <div class="end-text text-2xl font-medium text-blue-600/100  shadow-lg shadow-cyan-500/50">
       小猫累了，打招呼完毕
     </div>
   </div>
